@@ -13,12 +13,32 @@ def order(values: list = None) -> list:
 def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: demander les mots ici
+        mot_1 = input("Entrez le premier mot : ")
+        mot_2 = input("Entrez le deuxieme mot : ")
+        
         pass
 
     return False
 
 
 def contains_doubles(items: list) -> bool:
+    ma_liste = input("Entrez la liste : ")
+    #for i in range(len(ma_liste)):
+    #   for j in range(len(ma_liste)):
+    #       if ma_liste[i] == ma_liste[j] and i != j:
+    #           print('Ma liste contient un doublon') 
+
+
+    if len(set(ma_liste)) == len(ma_liste):
+        print('Que des elements uniques')
+
+
+    for element in ma_liste:
+        if ma_liste.count(element) > 1:
+            print('Doublons')
+            break
+
+
     return False
 
 
